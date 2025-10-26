@@ -8,12 +8,35 @@ export default function Contact() {
     message: ''
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // Here you would typically send the form data to a backend
-    alert('Thank you for your message! I\'ll get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
+    
+    // Option 1: Using Formspree (Free email forwarding service)
+    // Sign up at https://formspree.io and get your form ID
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New Contact from ${formData.name} - G-Aura Web Studio`
+        }),
+      })
+      
+      if (response.ok) {
+        alert('Thank you for your message! I\'ll get back to you soon.')
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        alert('There was an error sending your message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error:', error)
+      alert('There was an error sending your message. Please try again.')
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
