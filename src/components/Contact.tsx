@@ -14,7 +14,7 @@ export default function Contact() {
     // Option 1: Using Formspree (Free email forwarding service)
     // Sign up at https://formspree.io and get your form ID
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/mjkpvzzo', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
