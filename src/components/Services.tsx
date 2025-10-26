@@ -40,11 +40,11 @@ export default function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            My <span className="text-brand-green">Services</span>
+            Fast, Clean, Meaningful
           </h2>
           <div className="w-20 h-1 bg-brand-green mx-auto"></div>
           <p className="text-gray-300 text-lg mt-4 max-w-2xl mx-auto">
-            Comprehensive web solutions tailored to your business needs
+            Building digital experiences with Angular that deliver real results
           </p>
         </div>
 
@@ -83,13 +83,13 @@ export default function Services() {
 
         <div className="text-center mt-12">
           <p className="text-xl text-gray-300 mb-6">
-            Let's bring your vision online.
+            Ready to build something meaningful?
           </p>
           <a 
             href="#contact" 
             className="inline-flex items-center px-8 py-4 bg-brand-green text-brand-dark font-semibold rounded-lg hover:scale-105 transition-all duration-300 btn-glow"
           >
-            Start Your Project
+            Start Your Project ⚡
             <span className="ml-2">→</span>
           </a>
         </div>

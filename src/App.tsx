@@ -35,7 +35,7 @@ function Navbar() {
             whileHover={{ scale: 1.05 }}
           >
             <span className="bg-gradient-to-r from-brand-green to-green-400 bg-clip-text text-transparent">
-              G-Aura Web Studio
+              G-Aura Web Studio ⚡
             </span>
           </motion.div>
           

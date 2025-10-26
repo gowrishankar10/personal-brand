@@ -5,7 +5,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p className="text-gray-400 text-sm">
-              © 2025 <span className="text-brand-green font-semibold">G-Aura Web Studio</span>. All Rights Reserved.
+              © 2025 <span className="text-brand-green font-semibold">G-Aura Web Studio</span> by Gowrish ⚡
+            </p>
+            <p className="text-gray-500 text-xs mt-1">
+              Building fast, clean, and meaningful digital experiences
             </p>
           </div>
           

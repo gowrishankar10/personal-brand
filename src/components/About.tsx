@@ -71,13 +71,13 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-3xl font-bold text-brand-green">
-              Turning Ideas into Digital Reality
+              Crafting Digital Experiences That Matter
             </h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm <strong className="text-brand-green">Gowrish</strong>, a passionate Angular front-end developer with over 3 years of experience building fast, beautiful, and business-focused websites.
+              I'm <strong className="text-brand-green">Gowrish</strong>, founder of G-Aura Web Studio. I build fast, clean, and meaningful digital experiences with Angular.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I specialize in creating modern, responsive web applications that not only look stunning but also deliver real results for my clients. My expertise includes Angular development, UI/UX design, and performance optimization.
+              Simple, confident, professional. Every project focuses on speed, clarity, and impact. I turn complex requirements into elegant solutions that your users love.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">
