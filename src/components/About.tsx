@@ -70,14 +70,17 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-bold text-brand-green">
-              Crafting Digital Experiences That Matter
+            <h3 className="text-4xl font-bold text-brand-green mb-6">
+              Hey, I'm Gowrish 👋
             </h3>
-            <p className="text-gray-300 text-lg leading-relaxed">
-              I'm <strong className="text-brand-green">Gowrish</strong>, founder of G-Aura Web Studio. I build fast, clean, and meaningful digital experiences with Angular.
+            <p className="text-gray-300 text-lg leading-relaxed mb-4">
+              I'm a front-end developer with <strong className="text-brand-green">3+ years of experience</strong> building modern web apps using <strong className="text-brand-green">Angular</strong> and <strong className="text-brand-green">Spring Boot</strong>.
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed mb-4">
+              I help startups and businesses create <span className="text-brand-green">fast, responsive, and clean web solutions</span> that actually deliver results.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Simple, confident, professional. Every project focuses on speed, clarity, and impact. I turn complex requirements into elegant solutions that your users love.
+              When I'm not coding, I'm learning, lifting, or building something new to challenge myself. ⚡
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">
