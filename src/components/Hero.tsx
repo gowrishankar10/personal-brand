@@ -1,40 +1,6 @@
-import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
-  const [displayText, setDisplayText] = useState('')
-  const words = ['Websites', 'Dashboards', 'Portfolios']
-  
-  useEffect(() => {
-    let wordIndex = 0
-    let charIndex = 0
-    let isDeleting = false
-    
-    const typeWriter = () => {
-      const current = words[wordIndex]
-      
-      if (!isDeleting && charIndex < current.length) {
-        setDisplayText(current.substring(0, charIndex + 1))
-        charIndex++
-        setTimeout(typeWriter, 100)
-      } else if (isDeleting && charIndex > 0) {
-        setDisplayText(current.substring(0, charIndex - 1))
-        charIndex--
-        setTimeout(typeWriter, 50)
-      } else if (!isDeleting && charIndex === current.length) {
-        setTimeout(() => {
-          isDeleting = true
-          typeWriter()
-        }, 2000)
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false
-        wordIndex = (wordIndex + 1) % words.length
-        setTimeout(typeWriter, 200)
-      }
-    }
-    
-    typeWriter()
-  }, [])
 
   // Floating particles animation
   const FloatingParticle = ({ delay, duration }: { delay: number, duration: number }) => {
@@ -143,7 +109,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            I build modern, high-performance{' '}
+            Building fast, clean, and{' '}
           </motion.span>
           <motion.span 
             className="text-brand-green inline-block relative"
@@ -152,9 +118,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <span className="bg-gradient-to-r from-brand-green via-green-400 to-brand-green bg-clip-text text-transparent animate-shimmer bg-300%">
-              {displayText}
+              meaningful
             </span>
-            <span className="animate-pulse ml-1">|</span>
           </motion.span>
           <br className="hidden md:block" />
           <motion.span
@@ -162,13 +127,13 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            that grow your business{' '}
+            digital experiences{' '}
             <motion.span
               animate={{ rotate: [0, 10, -10, 0] }}
               transition={{ duration: 0.5, delay: 1 }}
               className="inline-block"
             >
-              🚀
+              ⚡
             </motion.span>
           </motion.span>
         </motion.h1>
@@ -186,7 +151,7 @@ export default function Hero() {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             Gowrish
-          </motion.span> — a passionate Angular front-end developer helping brands go digital.
+          </motion.span> from <span className="text-brand-green">G-Aura Web Studio</span>. Angular developer crafting digital experiences that matter. ⚡
         </motion.p>
         
         {/* CTA Buttons with stagger */}
